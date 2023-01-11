@@ -1,13 +1,12 @@
-import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './Pages/Login';
-import Dashboard from './Pages/Dashboard';
+import { ChakraProvider } from "@chakra-ui/react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./Pages/Login";
+import Dashboard from "./Pages/Dashboard";
 
 function App() {
   return (
     <ChakraProvider>
-      < BrowserRouter >
+      <BrowserRouter>
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
@@ -17,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
         </Routes>
-      </BrowserRouter >
-    </ChakraProvider >
+      </BrowserRouter>
+    </ChakraProvider>
   );
 }
 
