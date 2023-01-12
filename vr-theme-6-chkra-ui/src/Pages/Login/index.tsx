@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { Helmet } from "react-helmet";
-import { SimpleGrid, Box, Image, Show, Text, FormControl, FormLabel, InputGroup, Input, InputRightElement, Button, Checkbox, IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
+import { SimpleGrid, Box, Image, Show, Text, InputGroup, Input, InputRightElement, Button, Checkbox, IconButton, } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { loginMockup, LogoWhite, showPasswordIcon, hidePasswordIcon } from '../../assets/images';
-import { ChevronDownIcon, SearchIcon } from '@chakra-ui/icons';
 
 const Login = () => {
 
@@ -69,18 +68,6 @@ const Login = () => {
                 <Link to="#" title='Terms and Condition' className='custom-link'>Terms and Condition</Link>
                 <Link to="#" title='Help' className='custom-link'>Help</Link>
               </div>
-              <Menu>
-                <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-                  Actions
-                </MenuButton>
-                <MenuList>
-                  <MenuItem>Download</MenuItem>
-                  <MenuItem>Create a Copy</MenuItem>
-                  <MenuItem>Mark as Draft</MenuItem>
-                  <MenuItem>Delete</MenuItem>
-                  <MenuItem>Attend a Workshop</MenuItem>
-                </MenuList>
-              </Menu>
               <Show below='lg'>
                 <Text className="copyright-text"> © 2021 Company. All Rights Reserved. </Text>
               </Show>
